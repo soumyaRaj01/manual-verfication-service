@@ -2,7 +2,6 @@ package io.mosip.manualVerificationService.dto;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.Map;
 
@@ -13,23 +12,6 @@ public class AuthenticationRequest {
     private String version;
     private LocalDateTime requesttime;
     private Map<String, Object> metadata;
-    private RequestDataDTO request;
+    private RequestData request;
 }
 
-@Data
-class RequestDataDTO {
-    @NotNull
-    private String userName;
-
-    @NotNull
-    private String password;
-
-    @NotNull
-    private String appId;
-
-    @NotNull
-    private String clientId;
-
-    @NotNull
-    private String clientSecret;
-}

@@ -1,4 +1,4 @@
-package io.mosip.manualVerificationService.service;
+package io.mosip.manualVerificationService.utils;
 
 import org.springframework.stereotype.Component;
 

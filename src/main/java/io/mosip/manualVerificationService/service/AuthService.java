@@ -1,12 +1,12 @@
 package io.mosip.manualVerificationService.service;
 
-import io.mosip.manualVerificationService.dto.AuthenticationRequest;
-import io.mosip.manualVerificationService.dto.AuthenticationResponse;
-import io.mosip.manualVerificationService.dto.UserResponse;
+import io.mosip.manualVerificationService.dto.*;
 
 public interface AuthService {
 
-    AuthenticationResponse loginClient (AuthenticationRequest authRequest) ;
+    AuthenticationResponse loginClient (LoginRequest loginRequest) ;
 
     UserResponse fetchUsersByRole (String role) ;
+
+    UserAttributes fetchUserAttributes () ;
 }
